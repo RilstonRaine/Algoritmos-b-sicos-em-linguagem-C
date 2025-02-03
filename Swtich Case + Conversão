@@ -1,0 +1,69 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+
+
+
+int main() {
+setlocale(LC_ALL, "PORTUGUESE_BR");
+
+
+int tipo;
+float real, euro, dolar, valor;
+
+
+printf("==================================\n");
+printf("Selecione o tipo de moeda:\n");
+printf("==================================\n");
+printf("(1)REAL \n(2)EURO \n(3)DOLAR \n");
+scanf("%i",&tipo);
+printf("==================================\n");
+
+
+switch(tipo){
+      case 1:
+    printf("Informe o valor em REAIS: ");
+    scanf("%f",&real);
+   
+    valor=real*0.19;
+    printf("%.2f Reais equivalem a : %.2f Dolares \n",real,valor);
+   
+    valor=real*0.18;
+    printf("%.2f Reais equivalem a : %.2f Euros \n",real,valor);
+   
+    printf("==================================\n");
+    break;
+   
+        case 2:
+    printf("Informe o valor em EURO: ");
+    scanf("%f",&euro);
+   
+    valor=euro*5.54;
+    printf("%.2f Euros equivalem a : %.2f Reais \n",euro,valor);
+   
+    valor=euro*1.07;
+    printf("%.2f Euros equivalem a : %.2f Dolares \n",euro,valor);
+   
+    printf("==================================\n");
+    break;
+   
+        case 3:
+    printf("Informe o valor em DOLAR: ");
+    scanf("%f",&dolar);
+   
+    valor=dolar*5.19;
+    printf("%.2f Dolares equivalem a : %.2f Reais \n",dolar,valor);
+   
+    valor=dolar*0.94;
+    printf("%.2f Dolares equivalem a : %.2f Euros \n",dolar,valor);
+   
+    printf("==================================\n");
+    break;
+ 
+  default:
+        printf("Operacao invalida");
+            break;    
+}
+return 0;
+}

@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+
+int main(){
+/*Verifique se um número é positivo.*/
+ 
+setlocale(LC_ALL,"PORTUGUESE_BR");                                                  
+ 
+  int num;
+ 
+  printf("Informe um numero:");
+  scanf("%i",&num);
+ 
+  if(num>0){
+    printf("O numero e negativo");
+    }else{
+    printf("O numero e positivo");
+  }
+}
+
+

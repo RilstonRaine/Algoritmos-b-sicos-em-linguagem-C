@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main(){
+
+setlocale(LC_ALL,"PORTUGUESE_BR");                                                  
+ 
+  char let,vet[5] = {'a', 'e', 'i', 'o', 'u'};
+  int j=0;
+ 
+  printf("Informe uma letra:");
+  scanf("%c",&let);
+ 
+  for(int i=0;i<5;i++){
+ 
+  if(let==vet[i]){
+    j++;
+    break;
+    }
+}
+  if(j==1){
+    printf("A letra %c e uma vogal",let);
+    }else{
+    printf("A letra %c e uma consoante");
+  }
+}

@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <locale.h>
+
+int main(){
+setlocale(LC_ALL, "PORTUGUESE_BR"); 
+	
+	char nome[30];
+    float media, not1, not2, not3, soma;
+    
+    printf("Insira o nome do aluno : ");
+    gets(nome);
+    printf("Insira a 1° Nota : ");
+    scanf("%f",&not1);
+    printf("Insira a 2° Nota : ");
+    scanf("%f",&not2);
+    printf("Insira a 3° Nota : ");
+    scanf("%f",&not3);
+    
+    soma=not1+not2+not3;
+    media=soma/3;
+   
+	printf("===============================""\n");
+    printf("Aluno : %s \n",nome);
+    printf("Media : %f \n",media);
+    printf("===============================""\n");
+    return 0;
+}
+
+

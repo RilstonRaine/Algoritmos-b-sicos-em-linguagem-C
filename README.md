@@ -1,2 +1,2 @@
-# Algoritmos-b-sicos-em-linguagem-C
+# Algoritmos-basicos-em-linguagem-C
 Repositório com algoritmos básicos em linguagem C

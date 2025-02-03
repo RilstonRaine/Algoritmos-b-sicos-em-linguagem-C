@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main(){
+
+setlocale(LC_ALL,"PORTUGUESE_BR");                                                  
+ 
+  int num,x;
+ 
+  printf("Informe um numero:");
+  scanf("%i",&num);
+  x=num%2;
+ 
+  if(x==0){
+    printf("O numero e PAR");
+    }else{
+    printf("O numero e IMPAR");
+  }
+return 0;
+}

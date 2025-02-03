@@ -1,0 +1,53 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+
+int main() {
+setlocale(LC_ALL, "PORTUGUESE_BR");
+
+
+int n1, n2, operacao;
+int soma, sub, mult, div;
+
+
+printf("=============================\n");
+printf("Informe dois valores : \n");
+scanf("%i %i",&n1,&n2);
+printf("=============================\n");
+printf("Selecione uma operacao ! \n");
+printf("=============================\n");
+printf("(1)SOMA \n(2)SUBTRACAO \n(3)MULTIPLICACAO \n(4)DIVISAO \n");
+scanf("%i",&operacao);
+printf("=============================\n");
+
+
+
+
+switch(operacao){
+  case 1:
+    soma=n1+n2;
+    printf("O resultado da soma e : %i\n", soma);
+    printf("=============================\n");
+    break;
+  case 2:
+    sub=n1-n2;
+    printf("O resultado da subtracao e : %i\n", sub);
+    printf("=============================\n");
+    break;
+  case 3:
+    mult=n1*n2;
+    printf("O resultado da multiplicacao e : %i\n", mult);
+    printf("=============================\n");
+    break;
+  case 4:
+      div=n1/n2;
+    printf("O resultado da divisao e : %i\n", div);
+    printf("=============================\n");
+      break;
+  default:
+        printf("Operacao invalida");
+            break;    
+}
+return 0;
+}

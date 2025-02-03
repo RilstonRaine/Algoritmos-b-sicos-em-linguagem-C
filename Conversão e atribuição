@@ -1,0 +1,24 @@
+Ler dois valores para as variáveis A e B e efetuar as trocas dos valores de forma que a variável A passe a possuir o valor da variável B e a variável B passe a possuir o valor da variável A. Apresentar os valores trocados. 
+Ler uma temperatura em graus Celsius e apresentá-la convertida em graus Fahrenheit.
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main()
+{
+setlocale(LC_ALL, "PORTUGUESE_BR"); 
+	
+    float celsi, faren;
+    
+    printf("Insira o valor da temperatura em Celsius : ");
+    scanf("%f",&celsi);
+    
+    faren=(celsi*1.8)+32;
+ 
+	printf("===============================""\n");
+    printf("\n%.2f °C equivalem a %.2f °F\n", celsi, faren);
+    printf("\n===============================");
+    return 0;
+}
+

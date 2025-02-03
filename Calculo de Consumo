@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <locale.h>
+
+int main(){
+setlocale(LC_ALL, "PORTUGUESE_BR"); 
+
+	int dist,consumo;
+    float combus;
+    
+    printf("Insira a distancia percorrida: ");
+    scanf("%d",&dist);
+    printf("Insira o a quantidade de combustivel: ");
+    scanf("%f",&combus);    
+    
+    consumo = dist/combus;
+   
+    printf("===============================""\n");
+    printf("Consumo médio  %d L/Km \n",consumo );
+    printf("===============================""\n");
+    return 0;
+}

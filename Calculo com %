@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <locale.h>
+
+int main(){
+setlocale(LC_ALL, "PORTUGUESE_BR"); 
+	
+	char nome[30];
+    float slrfix, vendas, comiss=0.15, totalcomiss, totalslr;
+    
+    printf("Insira o nome do vendedor : ");
+    gets(nome);
+    printf("Insira o salario fixo do vendedor : ");
+    scanf("%f",&slrfix);
+    printf("Insira o total de vendas feitas pelo vendedor em dinheiro : ");
+    scanf("%f",&vendas);    
+   
+    totalcomiss=comiss*vendas;
+    totalslr=slrfix+totalcomiss;
+   
+	printf("===============================""\n");
+    printf("Vendedor : %s \n",nome);
+    printf("Salario Fixo : %f \n",slrfix);
+    printf("Comissao por venda : %f \n",totalcomiss);
+    printf("Salario total : %f \n",totalslr);
+    printf("===============================""\n");
+    return 0;
+}
+
